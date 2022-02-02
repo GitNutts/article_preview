@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  font-size: 0.8125rem;
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.container {
+  max-width: 750px;
+  height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.wrapper {
+  display: flex;
+  height: 300px;
+}
+
+.box-1 {
+  background-image: url("../img/drawers.jpg");
+  background-size: cover;
+  width: 75%;
+}
+
+.box-2 {
+  background-color: #fff;
+  padding: 40px;
+  width: 100%;
+}
+
+.box-2 h1 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  color: hsl(217, 19%, 35%);
+}
+
+.box-2 p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: hsl(214, 17%, 51%);
+}
+
+.sig {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.sig span {
+  color: hsl(217, 19%, 35%);
+  font-weight: 700;
+}
+
+.sig p:last-child {
+  color: hsl(212, 23%, 69%);
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.info p {
+  margin: 0;
+}
+
+img[alt="avatar"] {
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+button {
+  background-color: hsl(210, 46%, 95%);
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: hsl(214, 17%, 51%);
+}
+
+button:hover img {
+  filter: brightness(3);
+}
+
+.share {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  background-color: hsl(217, 19%, 35%);
+  width: 250px;
+  left: 220px;
+  bottom: 69px;
+  padding: 15px;
+  border-radius: 10px;
+  visibility: hidden;
+}
+
+.share::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  border-top: 20px solid hsl(217, 19%, 35%);
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+
+.share p {
+  text-transform: uppercase;
+  color: hsl(212, 23%, 69%);
+  font-size: 0.8125rem;
+  letter-spacing: 5px;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.show {
+  visibility: visible;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+img[alt="facebook"],
+img[alt="twitter"] {
+  margin-right: 20px;
+}
