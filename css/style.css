@@ -17,15 +17,14 @@ body {
 
 .container {
   max-width: 750px;
-  height: 300px;
   margin: 0 auto;
   overflow: hidden;
   border-radius: 10px;
+  box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.15);
 }
 
 .wrapper {
   display: flex;
-  height: 300px;
 }
 
 .box-1 {
@@ -56,7 +55,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
 }
 
 .sig span {
@@ -89,6 +87,8 @@ button {
   border-radius: 50%;
   cursor: pointer;
   border: none;
+  position: relative;
+  right: 3px;
 }
 
 button:hover {
@@ -102,12 +102,12 @@ button:hover img {
 .share {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: absolute;
+  left: 1148px;
+  top: 475px;
   background-color: hsl(217, 19%, 35%);
-  width: 250px;
-  left: 220px;
-  bottom: 69px;
-  padding: 15px;
+  padding: 19px 40px;
   border-radius: 10px;
   visibility: hidden;
 }
@@ -140,7 +140,121 @@ ul {
   list-style: none;
 }
 
+ul li a {
+  display: flex;
+  align-items: center;
+}
+
 img[alt="facebook"],
 img[alt="twitter"] {
-  margin-right: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 1440px) {
+  .share {
+    top: 255px;
+    left: 908px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .share {
+    top: 255px;
+    left: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .share {
+    left: 557px;
+    top: 270px;
+    padding: 15px 15px;
+  }
+
+  .container {
+    max-width: 650px;
+  }
+
+  .box-2 {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    max-width: 400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .box-1 {
+    height: 265px;
+    width: 100%;
+  }
+
+  .share {
+    left: 13px;
+    top: 546px;
+    width: 400px;
+    height: 70px;
+    border-radius: 0 0 10px 10px;
+    justify-content: start;
+    padding: 0 30px;
+  }
+
+  button {
+    z-index: 1;
+    top: 16px;
+  }
+
+  .share::after {
+    content: "";
+    position: initial;
+    bottom: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 330px;
+  }
+
+  .box-1 {
+    height: 220px;
+  }
+
+  .share {
+    left: 23px;
+    top: 489px;
+    width: 330px;
+    height: 70px;
+    border-radius: 0 0 10px 10px;
+    justify-content: start;
+    padding: 0 30px;
+  }
+
+  .share::after {
+    content: "";
+    position: initial;
+    bottom: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  button {
+    z-index: 1;
+    top: 16px;
+  }
+
+  .box-2 h1 {
+    font-size: 1.05rem;
+  }
 }
