@@ -258,3 +258,11 @@ img[alt="twitter"] {
     font-size: 1.05rem;
   }
 }
+
+@media (max-width: 320px) {
+  .share {
+    width: 320px;
+    left: 0;
+    top: 512px;
+  }
+}
