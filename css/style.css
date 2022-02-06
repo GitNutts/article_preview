@@ -208,6 +208,10 @@ img[alt="twitter"] {
 
   button {
     z-index: 1;
+  }
+
+  .sig {
+    position: relative;
     top: 16px;
   }
 
@@ -251,6 +255,10 @@ img[alt="twitter"] {
 
   button {
     z-index: 1;
+  }
+
+  .sig {
+    position: relative;
     top: 16px;
   }
 
